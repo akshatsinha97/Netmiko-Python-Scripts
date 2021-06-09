@@ -1,0 +1,13 @@
+aaa new- model
+radius-server host {{hostname here}}
+radius-server key {{radius server key here}}
+aaa authentication login default group radius local
+username {{username here}} password {{password here}}
+line vty 0 4
+login authentication default
+exit
+aaa authentication banner " welcome to our network" 
+aaa authentication username-prompt "enter your username" 
+aaa authentication password-prompt "enter your password" 
+aaa authentication fail-message "wrong username or password. Please try again..." 
+aaa authentication attempts login 3

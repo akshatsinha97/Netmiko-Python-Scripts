@@ -1,0 +1,17 @@
+---
+all_devices:
+    R1:
+        device_type: 'cisco_ios'
+        host: 'device hostname here'
+        username: 'device username'
+        password: 'device password here'
+    R2:
+        device_type: 'cisco_ios'
+        host: 'device hostname here'
+        username: 'device username here'
+        password: 'device password here'
+    R3:
+        device_type: 'cisco_ios'
+        host: 'device hostname here'
+        username: 'device username here'
+        password: 'device password here'

@@ -1,0 +1,15 @@
+hostname {{hostname}}
+router bgp {{as_number}}
+bgp router-id {{r_id}}
+{% for neighbor in neighbors %}
+{% if host == '192.168.1.240' %}
+neighbor {{neighbor}} route-reflector-client
+neighbor {{neighbor}} next-hop-self
+{% endif %}
+neighbor {{neighbor}} remote-as {{as_number}}
+{% endfor %}
+address-family {{address_family}} {{uni_multi}}
+{% for neighbor in neighbors %}
+neighbor {{neighbor}} activate
+{% endfor %}
+network {{network}} mask {{mask}}

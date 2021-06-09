@@ -1,0 +1,31 @@
+---
+all_devices:
+    R1:
+      host: 'device hostname here'
+      as_number: '65200'
+      r_id: '1.1.1.1'
+      neighbors: ['neighbor hostname here', 'neighbor hostname here']
+      address_family: 'ipv4' 
+      uni_multi: 'unicast'
+      network: '192.168.1.0'
+      mask: '255.255.255.0'
+
+    R2:
+      host: 'device hostname here'
+      as_number: '65200'
+      r_id: '2.2.2.2'
+      neighbors: ['neighbor hostname here']
+      address_family: 'ipv4' 
+      uni_multi: 'unicast'
+      network: '192.168.1.0'
+      mask: '255.255.255.0'
+
+    R3:
+      host: 'device hostname here'
+      as_number: '65200'
+      r_id: '3.3.3.3'
+      neighbors: ['neighbor hostname here']
+      address_family: 'ipv4' 
+      uni_multi: 'unicast'
+      network: '192.168.1.0'
+      mask: '255.255.255.0'
